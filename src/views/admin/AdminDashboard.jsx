@@ -142,11 +142,20 @@ const AdminDashboard = () => {
                       </div>
                     </div>
                   </li>
-              </ol>
-            </div>
 
-            <div className='flex flex-col gap-2pt-6 text-black '>
-              <ol className='relative border-1 border-slate-600 ml-4'>
+                  <li className='mb-3 ml-6'>
+                    <div className='flex absolute -left-5 shadow-lg justify-center items-center w-10 h-10 p-[6px] rounded-full bg-purple-300'><img src={LOGIN} alt=""className='w-full h-full rounded-full'/></div>
+                    <div className='p-3 bg-slate-300 rounded-lg border border-slate-900 shadow-sm'>
+                      <div className='flex justify-between items-center mb-2'>
+                          <Link className='text-md font-normal'>Admin</Link>
+                          <time className='mb-1 text-sm font-normal sm:order-last sm:mb-0'>2 days ago</time>
+                      </div>
+                       <div className='p-2 text-sm font-normal bg-slate-200 rounded-lg border border-teal-300'>
+                        <h3>How are you?</h3>  
+                      </div>
+                    </div>
+                  </li>
+
                   <li className='mb-3 ml-6'>
                     <div className='flex absolute -left-5 shadow-lg justify-center items-center w-10 h-10 p-[6px] rounded-full bg-purple-300'><img src={LOGIN} alt=""className='w-full h-full rounded-full'/></div>
                     <div className='p-3 bg-slate-300 rounded-lg border border-slate-900 shadow-sm'>
