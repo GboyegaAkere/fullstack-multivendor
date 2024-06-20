@@ -173,6 +173,41 @@ const AdminDashboard = () => {
           </div>
         </div>
       </div>
+
+      <div className='w-full p-4 bg-green-400 rounded-md mt-6'>
+        <div className='flex justify-between items-center'>
+            <h2>Recent Orders</h2>
+            <Link>View all</Link>
+        </div>
+        <div className='relative overflow-x-auto'>
+          <table className='w-full text-sm text-black uppercase border-b border-slate-950 text-left'>
+            <thead>
+              <tr>
+                <th className='py-3 px-4' scope='col'>Order ID</th>
+                <th className='py-3 px-4' scope='col'>Price</th>
+                <th className='py-3 px-4' scope='col'>Payment status</th>
+                <th className='py-3 px-4' scope='col'>Order status</th>
+                <th className='py-3 px-4' scope='col'>Active</th>
+              </tr>
+            </thead>
+            <tbody>
+              {
+                [1,2,3,4,5].map((n,i)=>{
+                  return(
+                    <tr key={i}>
+                        <td scope='row' className='py-3 px-4 whitespace-nowrap'>#45678</td>
+                        <td scope='row' className='py-3 px-4 whitespace-nowrap'>$780</td>
+                        <td scope='row' className='py-3 px-4 whitespace-nowrap'>approved</td>
+                        <td scope='row' className='py-3 px-4 whitespace-nowrap'>approved</td>
+                        <td scope='row' className='py-3 px-4 whitespace-nowrap'>#45678</td>
+                    </tr>
+                  )
+                })
+              }
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   )
 }
