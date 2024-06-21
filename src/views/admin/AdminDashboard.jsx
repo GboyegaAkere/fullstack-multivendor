@@ -22,7 +22,7 @@ const AdminDashboard = () => {
       }
     ],
     options:{
-      color:["#181ee8","#181ee8"],
+      color:["#6BAFDB","#181ee8"],
       plotOptions:{
         radius:30
       },
@@ -174,7 +174,7 @@ const AdminDashboard = () => {
         </div>
       </div>
 
-      <div className='w-full p-4 bg-green-400 rounded-md mt-6'>
+      <div className='w-full p-4 bg-[#6BAFDB] rounded-md mt-6'>
         <div className='flex justify-between items-center'>
             <h2>Recent Orders</h2>
             <Link>View all</Link>

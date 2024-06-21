@@ -10,7 +10,7 @@ const Orders = () => {
   return (
     <div  className='px-2 lg:px-7 pt-5'>
       <div className='flex justify-between items-center'>
-        <select onChange={(e)=>setParPage(parseInt(e.target.value))} className='px-4 py-2 focus:border-yellow-200 outline-none bg-green-300 border rounded-md text-black border-slate-700'>
+        <select onChange={(e)=>setParPage(parseInt(e.target.value))} className='px-4 py-2 outline-none bg-[#6BAFDB] rounded-md text-black border-slate-700'>
             <option value="5">5</option>
             <option value="10">10</option>
             <option value="20">20</option>

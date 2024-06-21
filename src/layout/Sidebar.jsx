@@ -22,7 +22,7 @@ const Sidebar = ({showSidebar,setShowSidebar}) => {
 
       </div>
 
-      <div className={`w-[260px] fixed bg-gray-400 z-50 top-0 h-screen transition-all ${showSidebar ? "left-0":"-left-[260px] lg:left-0"}`}>
+      <div className={`w-[260px] fixed bg-[#F0F7FB] z-50 top-0 h-screen transition-all ${showSidebar ? "left-0":"-left-[260px] lg:left-0"}`}>
         <div className='h-[70px] flex justify-center items-center'>
           <Link to="/">
             {/* <img src={LOGIN} alt=""className='w-[180px] h-[50px]'/> */}
@@ -35,7 +35,7 @@ const Sidebar = ({showSidebar,setShowSidebar}) => {
                 {
                   allNav.map((n,i)=>{
                     return <li key={i}>
-                      <Link to={n.path} className={`${pathname === n.path ? "bg-blue-300 shadow-indigo-500/50 text-white duration-500":"text-black font-bold duration-200"} flex items-center justify-start gap-[12px] hover:pl-4 w-full mb-1 px-12px py-[9px] rounded-sm pl-[15px]`}>
+                      <Link to={n.path} className={`${pathname === n.path ? "bg-[#6BAFDB] shadow-indigo-500/50 text-white duration-500":"text-black font-bold duration-200"} flex items-center justify-start gap-[12px] hover:pl-4 w-full mb-1 px-12px py-[9px] rounded-sm pl-[15px]`}>
                         <span>{n.icon}</span>
                         <span>{n.title}</span>
                       </Link>
