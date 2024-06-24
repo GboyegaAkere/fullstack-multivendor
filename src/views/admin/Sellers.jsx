@@ -14,6 +14,7 @@ const Sellers = () => {
     const [show, setShow] = useState(false)
   return (
     <div className='px-2 lg:px-7 pt-5'>
+      <h1 className='text-[20px] font-bold mt-3'>Seller</h1>
       <div className='w-full p-4 bg-[#6BAFDB]  rounded-md'>
             <div className='flex justify-between items-center'>
                 <select onChange={(e)=>setParPage(parseInt(e.target.value))} className='px-4 py-2 focus:border-yellow-200 outline-none bg-[#F0F7FB] border rounded-md text-black border-slate-700'>

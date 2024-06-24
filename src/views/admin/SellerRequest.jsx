@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { MdDelete } from "react-icons/md";
 import { IoMdCloseCircle } from 'react-icons/io';
 
-const  DeactiveSeller = () => {
+const SellerRequest = () => {
     const [currentPage, setCurentPage] = useState(1)
     const [search, setSearch] = useState("")
     const [parPage, setParPage] =useState(5)
@@ -31,7 +31,6 @@ const  DeactiveSeller = () => {
             <thead>
               <tr>
                 <th className='py-3 px-4' scope='col'>No</th>
-                <th className='py-3 px-4' scope='col'>Image</th>
                 <th className='py-3 px-4' scope='col'>Name</th>
                 <th className='py-3 px-4' scope='col'>Email</th>
                 <th className='py-3 px-4' scope='col'>Payment Status</th>
@@ -45,11 +44,10 @@ const  DeactiveSeller = () => {
                   return(
                     <tr key={i}>
                         <td  className='py-3 px-4 whitespace-nowrap'>{d}</td>
-                        <td  className='py-3 px-4 whitespace-nowrap'><img src={LOGIN} alt=""className='w-[45px] h-[45px] rounded-full'/></td>
                         <td  className='py-3 px-4 whitespace-nowrap'>Gboyega</td>
                         <td  className='py-3 px-4 whitespace-nowrap'>akeremaleOluwagboyega@gmail.com</td>
-                        <td  className='py-3 px-4 whitespace-nowrap'>Approved</td>
-                        <td  className='py-3 px-4 whitespace-nowrap'>Deactive</td>
+                        <td  className='py-3 px-4 whitespace-nowrap'>Inactive</td>
+                        <td  className='py-3 px-4 whitespace-nowrap'>Pending</td>
 
                         <td  className='py-3 px-4 whitespace-nowrap'><FaEye/></td>
                     </tr>
@@ -67,4 +65,4 @@ const  DeactiveSeller = () => {
   )
 }
 
-export default DeactiveSeller
+export default SellerRequest
