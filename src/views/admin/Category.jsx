@@ -16,16 +16,16 @@ const Category = () => {
   return (
     <div className='px-2 lg:px-7 pt-5'>
 
-      <div className='flex lg:hidden justify-between items-center mb-5 p-4 bg-green-300 rounded-md'>
+      <div className='flex lg:hidden justify-between items-center mb-5 p-4 bg-[#6BAFDB] rounded-md'>
         <h1 className='font-semibold text-lg'>Category</h1>
-        <button onClick={()=>setShow(true)} className='bg-red-500 px-4 py-2 cursor-pointer rounded-sm text-sm'>Add</button>
+        <button onClick={()=>setShow(true)} className='bg-[#F0F7FB] px-4 py-2 cursor-pointer rounded-md text-sm'>Add</button>
       </div>
 
         <div className='flex flex-wrap w-full'>
             <div className='w-full lg:w-7/12'>
                 <div className='w-full p-4 bg-[#6BAFDB] rounded-md'>
                     <div className='flex justify-between items-center'>
-                        <select onChange={(e)=>setParPage(parseInt(e.target.value))} className='px-4 py-2 focus:border-yellow-200 outline-none bg-green-300 border rounded-md text-black border-slate-700'>
+                        <select onChange={(e)=>setParPage(parseInt(e.target.value))} className='px-4 py-2 focus:border-yellow-200 outline-none bg-[#F0F7FB] border rounded-md text-black border-slate-700'>
                             <option value="5">5</option>
                             <option value="10">10</option>
                             <option value="20">20</option>
@@ -48,11 +48,11 @@ const Category = () => {
                 [1,2,3,4,5].map((d,i)=>{
                   return(
                     <tr key={i}>
-                        <td scope='row' className='py-3 px-4 whitespace-nowrap'>{d}</td>
-                        <td scope='row' className='py-3 px-4 whitespace-nowrap'><img src={LOGIN} alt=""className='w-[45px] h-[45px] rounded-full'/></td>
-                        <td scope='row' className='py-3 px-4 whitespace-nowrap'>T-shirt</td>
+                        <td  className='py-3 px-4 whitespace-nowrap'>{d}</td>
+                        <td  className='py-3 px-4 whitespace-nowrap'><img src={LOGIN} alt=""className='w-[45px] h-[45px] rounded-full'/></td>
+                        <td className='py-3 px-4 whitespace-nowrap'>T-shirt</td>
                         
-                            <td scope='row' className='py-3 px-4 whitespace-nowrap '>
+                            <td  className='py-3 px-4 whitespace-nowrap '>
                                 <div className='flex justify-start gap-3 items-center'>
                                     <Link>< FiEdit/></Link>
                                     <Link>< MdDelete/></Link>

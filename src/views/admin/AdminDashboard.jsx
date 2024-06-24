@@ -70,8 +70,8 @@ const AdminDashboard = () => {
   return (
     <div  className='px-2 md:px-7 py-5'>
       <div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7'>
-        <div className='flex justify-between items-center p-5 bg-white rounded-md gap-3'>
-            <div className='flex flex-col justify-start items-start text-gray-400'>
+        <div className='flex justify-between items-center p-5 bg-[#bedcee] rounded-md gap-3'>
+            <div className='flex flex-col justify-start items-start '>
               <h2 className='text-3xl font-bold'>$334</h2>
               <span className='text-medium font-medium'>Total sales</span>
             </div>
@@ -81,8 +81,8 @@ const AdminDashboard = () => {
             </div>
         </div>
 
-        <div className='flex justify-between items-center p-5 bg-indigo-200 rounded-md gap-3'>
-            <div className='flex flex-col justify-start items-start text-gray-400'>
+        <div className='flex justify-between items-center p-5 bg-[#bedcee] shadow-lg rounded-md gap-3'>
+            <div className='flex flex-col justify-start items-start'>
               <h2 className='text-3xl font-bold'>40</h2>
               <span className='text-medium font-medium'>Products</span>
             </div>
@@ -92,8 +92,8 @@ const AdminDashboard = () => {
             </div>
         </div>
 
-        <div className='flex justify-between items-center p-5 bg-green-300 rounded-md gap-3'>
-            <div className='flex flex-col justify-start items-start text-gray-400'>
+        <div className='flex justify-between items-center p-5 bg-[#bedcee] rounded-md gap-3'>
+            <div className='flex flex-col justify-start items-start '>
               <h2 className='text-3xl font-bold'>54</h2>
               <span className='text-medium font-medium'>Sellers</span>
             </div>
@@ -103,8 +103,8 @@ const AdminDashboard = () => {
             </div>
         </div>
 
-        <div className='flex justify-between items-center p-5 bg-purple-300 rounded-md gap-3'>
-            <div className='flex flex-col justify-start items-start text-gray-400'>
+        <div className='flex justify-between items-center p-5 bg-[#bedcee] rounded-md gap-3'>
+            <div className='flex flex-col justify-start items-start '>
               <h2 className='text-3xl font-bold'>$2345</h2>
               <span className='text-medium font-medium'>Orders</span>
             </div>
