@@ -48,8 +48,11 @@ const SellerRequest = () => {
                         <td  className='py-3 px-4 whitespace-nowrap'>akeremaleOluwagboyega@gmail.com</td>
                         <td  className='py-3 px-4 whitespace-nowrap'>Inactive</td>
                         <td  className='py-3 px-4 whitespace-nowrap'>Pending</td>
-
-                        <td  className='py-3 px-4 whitespace-nowrap'><FaEye/></td>
+                        <td  className='py-3 px-4 whitespace-nowrap'>
+                          <div>
+                            <Link to="/admin/dashboard/seller/details/2"><FaEye/></Link>
+                          </div>
+                        </td>
                     </tr>
                   )
                 })

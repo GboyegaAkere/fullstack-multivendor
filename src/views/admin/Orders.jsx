@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FaArrowsUpDown } from "react-icons/fa6";
 import Pagination from '../Pagination';
+import { Link } from 'react-router-dom';
 
 const Orders = () => {
     const [currentPage, setCurentPage] = useState(1)
@@ -38,7 +39,11 @@ const Orders = () => {
                     <div className='py-3 w-[25%] font-bold'>$60</div>
                     <div className='py-3 w-[25%] font-bold'>Pending</div>
                     <div className='py-3 w-[25%] font-bold'>Pending</div>
-                    <div className='py-3 w-[25%] font-bold'>View</div>
+                    <div className='py-3 w-[25%] font-bold'>
+                        <Link to='/admin/dashboard/order/details/2'>
+                            View
+                        </Link>
+                    </div>
                     <div onClick={(e)=>setShow(!show)} className='py-3 w-[25%] font-bold'><FaArrowsUpDown /></div>
                 </div>
             </div>

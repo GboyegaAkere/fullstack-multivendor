@@ -69,7 +69,7 @@ export const allNav = [
         title:"Live Chat",
         icon:<BsChatDots/>,
         role:"admin",
-        path:"/admin/dashboard/chat"
+        path:"admin/dashboard/chat-sellers",
     },
 
 
