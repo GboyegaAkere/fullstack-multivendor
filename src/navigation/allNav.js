@@ -65,12 +65,69 @@ export const allNav = [
     },
 
     {
-        id:7,
+        id:8,
         title:"Live Chat",
         icon:<BsChatDots/>,
         role:"admin",
-        path:"admin/dashboard/chat-sellers",
+        path:"/admin/dashboard/chat-sellers",
     },
+    {
+        id:9,
+        title:"Dashboard",
+        icon:<BiSolidDashboard />,
+        role:"seller",
+        path:"/seller/dashboard",
+    },
+    {
+        id:10,
+        title:"Add Product",
+        icon:<BiSolidDashboard />,
+        role:"seller",
+        path:"/seller/dashboard/add-product",
+    },
+    {
+        id:11,
+        title:"All Product",
+        icon:<BiSolidDashboard />,
+        role:"seller",
+        path:"/seller/dashboard/all-product",
+    },
+    {
+        id:12,
+        title:"Discount Product",
+        icon:<BiSolidDashboard />,
+        role:"seller",
+        path:"/seller/dashboard/discount-product",
+    },
+    {
+        id:13,
+        title:"Orders",
+        icon:<BiSolidDashboard />,
+        role:"seller",
+        path:"/seller/dashboard/orders",
+    },
+    {
+        id:14,
+        title:"Payments",
+        icon:<BiSolidDashboard />,
+        role:"seller",
+        path:"/seller/dashboard/payments",
+    },
+    {
+        id:15,
+        title:"Chat Customer",
+        icon:<BiSolidDashboard />,
+        role:"seller",
+        path:"/seller/dashboard/chat-customer",
+    },
+    {
+        id:16,
+        title:"Chat Support",
+        icon:<BiSolidDashboard />,
+        role:"seller",
+        path:"/seller/dashboard/chat-support",
+    },
+
 
 
 ]
