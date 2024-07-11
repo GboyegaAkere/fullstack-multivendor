@@ -123,7 +123,15 @@ const removeImage =(i) =>{
 
                     <div className='flex flex-col w-full gap-1'>
                         <label htmlFor="brand">Brand Name</label>
-                        <input className='px-4 py-2 focus:border-indigo-500 outline-none bg-[#ebecec] border border-slate-500 rounded-md' onChange={inputHandle} type="text" value={state.brand} name='brand' id='brand' placeholder='Brand name'  />
+                        <input 
+                          className='px-4 py-2 focus:border-indigo-500 outline-none bg-[#ebecec] border border-slate-500 rounded-md' 
+                          onChange={inputHandle} 
+                          type="text" 
+                          value={state.brand} 
+                          name='brand' 
+                          id='brand' 
+                          placeholder='Brand name'  
+                       />
                     </div>
                 </div>
 
