@@ -90,7 +90,7 @@ export const allNav = [
         title:"All Product",
         icon:<BiSolidDashboard />,
         role:"seller",
-        path:"/seller/dashboard/all-product",
+        path:"/seller/dashboard/products",
     },
     {
         id:12,

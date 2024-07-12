@@ -1,6 +1,7 @@
 import { lazy } from "react";
 const AddProduct= lazy(()=>import("../../views/seller/AddProduct"))
 const SellerDashboard= lazy(()=>import("../../views/seller/SellerDashboard"))
+const Products = lazy(()=>import("../../views/seller/Products"))
 const Home= lazy(()=>import("../../views/Home"))
 
 export const sellerRoute =[
@@ -19,6 +20,12 @@ export const sellerRoute =[
     {
         path:"/seller/dashboard/add-product",
         element:<AddProduct/>,
+        ability:["seller"]
+    },
+
+    {
+        path:"/seller/dashboard/products",
+        element:<Products/>,
         ability:["seller"]
     }
 
