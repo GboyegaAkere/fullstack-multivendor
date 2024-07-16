@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Search from '../components/Search';
-import { FaArrowsUpDown, FaImage, } from "react-icons/fa6";
+import { FaArrowsUpDown, FaEye, FaImage, } from "react-icons/fa6";
 import { FiEdit } from "react-icons/fi";
 import Pagination from '../Pagination';
 import LOGIN from "../../../src/images/login.png"
@@ -52,6 +52,7 @@ const Products = () => {
                             <td  className='py-3 px-4 whitespace-nowrap '>
                                 <div className='flex justify-start gap-3 items-center'>
                                     <Link>< FiEdit/></Link>
+                                    <Link>< FaEye/></Link>
                                     <Link>< MdDelete/></Link>
                                 </div>
                             </td>
@@ -61,6 +62,9 @@ const Products = () => {
               }
             </tbody>
           </table>
+          <div className='w-full flex justify-end mt-4 bottom-4 left-4'>
+          <Pagination pageNumber={currentPage} setPageNumber={setCurentPage} totalItem={50} parPage={parPage} showItem={3}/>
+        </div>
         </div>
             </div> 
         </div>

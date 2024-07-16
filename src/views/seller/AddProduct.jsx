@@ -111,7 +111,7 @@ const removeImage =(i) =>{
       <div className='w-full p-4 rounded-md bg-slate-300 '>
         <div className='flex justify-between items-center pb-4'>
             <h1>Add Product</h1>
-            <Link className="bg-blue-600 hover:shadow-blue-400 rounded-md px-7 py-2 my-2">All Product</Link>
+            <Link to="/seller/dashboard/products" className="bg-blue-600 hover:shadow-blue-400 rounded-md px-7 py-2 my-2">All Product</Link>
         </div>
         <div>
             <form action="">
