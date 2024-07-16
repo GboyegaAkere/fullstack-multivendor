@@ -33,7 +33,7 @@ const Category = () => {
 
                         <input type="text" placeholder='search' className='px-4 py-2 focus:border-blue-400 rounded-lg'/>
                     </div>
-                    <div className='relative overflow-x-auto'>
+                 <div className='relative overflow-x-auto'>
           <table className='w-full text-sm text-black uppercase border-b border-slate-950 text-left'>
             <thead>
               <tr>

@@ -19,13 +19,18 @@ const Products = () => {
             <h1 className='font-semibold text-lg mb-3'>All Products</h1>  
             <div className='w-full p-4 bg-green-400 rounded-md'>
               <Search setSearch={setSearch} search={search} setParPage={setParPage}/>
-              <div className='relative overflow-x-auto'>
+              <div className='relative overflow-x-auto mt-5'>
           <table className='w-full text-sm text-black uppercase border-b border-slate-950 text-left'>
             <thead>
               <tr>
                 <th className='py-3 px-4' scope='col'>No</th>
                 <th className='py-3 px-4' scope='col'>Image</th>
                 <th className='py-3 px-4' scope='col'>Name</th>
+                <th className='py-3 px-4' scope='col'>Category</th>
+                <th className='py-3 px-4' scope='col'>Brand</th>
+                <th className='py-3 px-4' scope='col'>Price</th>
+                <th className='py-3 px-4' scope='col'>Discount</th>
+                <th className='py-3 px-4' scope='col'>Stock</th>
                 <th className='py-3 px-4' scope='col'>Action</th>
               </tr>
             </thead>
@@ -36,7 +41,13 @@ const Products = () => {
                     <tr key={i}>
                         <td  className='py-3 px-4 whitespace-nowrap'>{d}</td>
                         <td  className='py-3 px-4 whitespace-nowrap'><img src={LOGIN} alt=""className='w-[45px] h-[45px] rounded-full'/></td>
+                        <td className='py-3 px-4 whitespace-nowrap'>Men full sleeve</td>
                         <td className='py-3 px-4 whitespace-nowrap'>T-shirt</td>
+                        <td className='py-3 px-4 whitespace-nowrap'>Nike</td>
+                        <td className='py-3 px-4 whitespace-nowrap'>$500</td>
+                        <td className='py-3 px-4 whitespace-nowrap'>10%</td>
+                        <td className='py-3 px-4 whitespace-nowrap'>20</td>
+                        
                         
                             <td  className='py-3 px-4 whitespace-nowrap '>
                                 <div className='flex justify-start gap-3 items-center'>
